@@ -3,11 +3,10 @@ package POGOProtos.Networking.Responses;
 
 import "POGOProtos/Data/Battle/BattleUpdate.proto";
 import "POGOProtos/Data/Badge/AwardedGymBadge.proto";
-import "POGOProtos/Networking/Responses/StartGymBattleResponse.proto";
 
 
 message GymBattleAttackResponse {
-	.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;
+	.POGOProtos.Networking.Responses.GymBattleAttackResponse.Result result = 1;
 	.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;
 	.POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 3;
 
